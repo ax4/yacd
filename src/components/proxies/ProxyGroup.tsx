@@ -1,6 +1,6 @@
 /* import memoizeOne from 'memoize-one'; */
 import * as React from 'react';
-import { Zap } from 'react-feather';
+import { Wifi, Zap } from 'react-feather';
 
 import {
   getCollapsibleIsOpen,
@@ -91,6 +91,10 @@ function ProxyGroupImpl({
         >
           <ZapWrapper />
         </Button>
+        <h3 style={{ display: 'flex', alignItems: 'center' }}>
+          <Wifi size={12}/>
+          <span style={{ whiteSpace:'nowrap' }}>{now}</span>
+        </h3>
       </div>
       {createElement(isOpen ? ProxyList : ProxyListSummaryView, {
         all,
